@@ -1,0 +1,1183 @@
+Model(
+  name: caroca
+  pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+  pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+  version: 1.4
+  root_link: frame
+  links:
+    Link(
+      name: frame
+      pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+      pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 100000
+        inertia: Inertia(ixx=100000, ixy=0, ixz=0, iyy=100000, iyz=0, izz=100000)
+      )
+      collisions: [
+        Collision(name: collision1, pose: t=[-4.   -2.1   1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision2, pose: t=[-4.    0.2   0.02] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision3, pose: t=[ 0.   -2.1   0.02] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision4, pose: t=[-4.   0.2  3.5] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision5, pose: t=[ 0.  -2.1  3.5] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision6, pose: t=[-4.    2.5   1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision7, pose: t=[0.   2.5  0.02] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision8, pose: t=[0.  2.5 3.5] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision9, pose: t=[ 4.   -2.1   1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision10, pose: t=[4.   0.2  0.02] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision11, pose: t=[4.  0.2 3.5] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+        Collision(name: collision12, pose: t=[4.   2.5  1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': None})
+      ]
+      visuals: [
+        Visual(name: visual1, pose: t=[-4.   -2.1   1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '3.48'})
+        Visual(name: visual2, pose: t=[-4.    0.2   0.02] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '4.6'})
+        Visual(name: visual3, pose: t=[ 0.   -2.1   0.02] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '8.0'})
+        Visual(name: visual4, pose: t=[-4.   0.2  3.5] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '4.6'})
+        Visual(name: visual5, pose: t=[ 0.  -2.1  3.5] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '8.0'})
+        Visual(name: visual6, pose: t=[-4.    2.5   1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '3.48'})
+        Visual(name: visual7, pose: t=[0.   2.5  0.02] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '8.0'})
+        Visual(name: visual8, pose: t=[0.  2.5 3.5] q=[0.     0.7071 0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '8.0'})
+        Visual(name: visual9, pose: t=[ 4.   -2.1   1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '3.48'})
+        Visual(name: visual10, pose: t=[4.   0.2  0.02] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '4.6'})
+        Visual(name: visual11, pose: t=[4.  0.2 3.5] q=[0.7071 0.     0.     0.7071], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '4.6'})
+        Visual(name: visual12, pose: t=[4.   2.5  1.76] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.02', 'length': '3.48'})
+      ]
+    )
+    Link(
+      name: platform
+      pose: t=[0.9 0.9 0.2] q=[0. 0. 0. 1.]
+      pose_world: t=[0.9 0.9 0.2] q=[0. 0. 0. 1.]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 150
+        inertia: Inertia(ixx=6.5, ixy=0.0, ixz=0.0, iyy=20.0, iyz=0.0, izz=22.5)
+      )
+      collisions: [
+        Collision(name: collisionpf, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: box, geometry_data: {'size': '1.200000 0.600000 0.400000'})
+      ]
+      visuals: [
+        Visual(name: visualpf, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: box, geometry_data: {'size': '1.200000 0.600000 0.400000'})
+      ]
+    )
+    Link(
+      name: cable0
+      pose: t=[-2.21667 -1.33267  2.60167] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[-2.21667 -1.33267  2.60167] q=[-0.4032   0.77538  0.       0.48601]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X0
+      pose: t=[-3.5 -2.   3.5] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[-3.5 -2.   3.5] q=[-0.4032   0.77538  0.       0.48601]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y0
+      pose: t=[-3.5 -2.   3.5] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[-3.5 -2.   3.5] q=[-0.4032   0.77538  0.       0.48601]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf0
+      pose: t=[1.5 0.6 0. ] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[1.5 0.6 0. ] q=[-0.4032   0.77538  0.       0.48601]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf0
+      pose: t=[1.5 0.6 0. ] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[1.5 0.6 0. ] q=[-0.4032   0.77538  0.       0.48601]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable1
+      pose: t=[-2.90007 -1.4948   3.01058] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[-2.90007 -1.4948   3.01058] q=[-0.56327  0.66889  0.       0.48508]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X1
+      pose: t=[-3.5 -2.   3.5] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[-3.5 -2.   3.5] q=[-0.56327  0.66889  0.       0.48508]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y1
+      pose: t=[-3.5 -2.   3.5] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[-3.5 -2.   3.5] q=[-0.56327  0.66889  0.       0.48508]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf1
+      pose: t=[0.3 1.2 0.4] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[0.3 1.2 0.4] q=[-0.56327  0.66889  0.       0.48508]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf1
+      pose: t=[0.3 1.2 0.4] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[0.3 1.2 0.4] q=[-0.56327  0.66889  0.       0.48508]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable2
+      pose: t=[ 3.35905 -1.88548  3.36346] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[ 3.35905 -1.88548  3.36346] q=[ 0.56418  0.69438  0.      -0.44668]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X2
+      pose: t=[ 3.5 -2.   3.5] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[ 3.5 -2.   3.5] q=[ 0.56418  0.69438  0.      -0.44668]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y2
+      pose: t=[ 3.5 -2.   3.5] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[ 3.5 -2.   3.5] q=[ 0.56418  0.69438  0.      -0.44668]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf2
+      pose: t=[0.3 0.6 0.4] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[0.3 0.6 0.4] q=[ 0.56418  0.69438  0.      -0.44668]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf2
+      pose: t=[0.3 0.6 0.4] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[0.3 0.6 0.4] q=[ 0.56418  0.69438  0.      -0.44668]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable3
+      pose: t=[ 3.41623 -1.86598  3.35341] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[ 3.41623 -1.86598  3.35341] q=[ 0.77721  0.48575  0.      -0.39998]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X3
+      pose: t=[ 3.5 -2.   3.5] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[ 3.5 -2.   3.5] q=[ 0.77721  0.48575  0.      -0.39998]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y3
+      pose: t=[ 3.5 -2.   3.5] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[ 3.5 -2.   3.5] q=[ 0.77721  0.48575  0.      -0.39998]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf3
+      pose: t=[1.5 1.2 0. ] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[1.5 1.2 0. ] q=[ 0.77721  0.48575  0.      -0.39998]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf3
+      pose: t=[1.5 1.2 0. ] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[1.5 1.2 0. ] q=[ 0.77721  0.48575  0.      -0.39998]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable4
+      pose: t=[-3.20091  1.88981  3.22452] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[-3.20091  1.88981  3.22452] q=[0.31437 0.85329 0.      0.41599]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X4
+      pose: t=[-3.5  2.   3.5] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[-3.5  2.   3.5] q=[0.31437 0.85329 0.      0.41599]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y4
+      pose: t=[-3.5  2.   3.5] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[-3.5  2.   3.5] q=[0.31437 0.85329 0.      0.41599]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf4
+      pose: t=[0.3 0.6 0. ] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[0.3 0.6 0. ] q=[0.31437 0.85329 0.      0.41599]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf4
+      pose: t=[0.3 0.6 0. ] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[0.3 0.6 0. ] q=[0.31437 0.85329 0.      0.41599]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable5
+      pose: t=[-2.65289  1.86446  2.97479] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[-2.65289  1.86446  2.97479] q=[0.13782 0.86143 0.      0.4888 ]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X5
+      pose: t=[-3.5  2.   3.5] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[-3.5  2.   3.5] q=[0.13782 0.86143 0.      0.4888 ]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y5
+      pose: t=[-3.5  2.   3.5] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[-3.5  2.   3.5] q=[0.13782 0.86143 0.      0.4888 ]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf5
+      pose: t=[1.5 1.2 0.4] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[1.5 1.2 0.4] q=[0.13782 0.86143 0.      0.4888 ]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf5
+      pose: t=[1.5 1.2 0.4] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[1.5 1.2 0.4] q=[0.13782 0.86143 0.      0.4888 ]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable6
+      pose: t=[3.99945 2.34962 4.27416] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[3.99945 2.34962 4.27416] q=[-0.54185  0.77408  0.      -0.32739]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X6
+      pose: t=[3.5 2.  3.5] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[3.5 2.  3.5] q=[-0.54185  0.77408  0.      -0.32739]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y6
+      pose: t=[3.5 2.  3.5] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[3.5 2.  3.5] q=[-0.54185  0.77408  0.      -0.32739]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf6
+      pose: t=[1.5 0.6 0.4] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[1.5 0.6 0.4] q=[-0.54185  0.77408  0.      -0.32739]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf6
+      pose: t=[1.5 0.6 0.4] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[1.5 0.6 0.4] q=[-0.54185  0.77408  0.      -0.32739]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: cable7
+      pose: t=[3.58112 2.02028 3.58872] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[3.58112 2.02028 3.58872] q=[-0.22542  0.90169  0.      -0.36895]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        Visual(name: visual, pose: t=[0. 0. 0.] q=[0. 0. 0. 1.], pose_world: t=[0. 0. 0.] q=[0. 0. 0. 1.], geometry_type: cylinder, geometry_data: {'radius': '0.005', 'length': '9.86257572848'})
+      ]
+    )
+    Link(
+      name: virt_X7
+      pose: t=[3.5 2.  3.5] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[3.5 2.  3.5] q=[-0.22542  0.90169  0.      -0.36895]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Y7
+      pose: t=[3.5 2.  3.5] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[3.5 2.  3.5] q=[-0.22542  0.90169  0.      -0.36895]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Xpf7
+      pose: t=[0.3 1.2 0. ] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[0.3 1.2 0. ] q=[-0.22542  0.90169  0.      -0.36895]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+    Link(
+      name: virt_Ypf7
+      pose: t=[0.3 1.2 0. ] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[0.3 1.2 0. ] q=[-0.22542  0.90169  0.      -0.36895]
+      inertial: Inertial(
+        pose: t=[0. 0. 0.] q=[0. 0. 0. 1.]
+        mass: 0.001
+        inertia: Inertia(ixx=0.001, ixy=0, ixz=0, iyy=0.001, iyz=0, izz=0.001)
+      )
+      collisions: [
+        
+      ]
+      visuals: [
+        
+      ]
+    )
+  joints:
+    Joint(
+      name: rev_X0
+      pose: t=[0. 0. 0.] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[-3.5 -2.   3.5] q=[ 0.39192 -0.75369  0.       0.52758]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X0
+      axis: Axis(xyz=['-0.202444' '-0.625271' '-0.753693'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y0
+      pose: t=[0. 0. 0.] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[-3.5 -2.   3.5] q=[ 0.39192 -0.75369  0.       0.52758]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X0
+      child: virt_Y0
+      axis: Axis(xyz=['-0.625271' '0.674859' '-0.391920'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable0
+      pose: t=[ 0.       0.      -1.26568] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[-3.17061 -1.82872  3.26943] q=[ 0.39192 -0.75369  0.       0.52758]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y0
+      child: cable0
+      axis: Axis(xyz=['-0.753693' '-0.391920' '0.527585'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf0
+      pose: t=[0. 0. 0.] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[1.5 0.6 0. ] q=[ 0.39192 -0.75369  0.       0.52758]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf0
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf0
+      pose: t=[0. 0. 0.] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[1.5 0.6 0. ] q=[ 0.39192 -0.75369  0.       0.52758]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf0
+      child: virt_Ypf0
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf0
+      pose: t=[0. 0. 0.] q=[-0.4032   0.77538  0.       0.48601]
+      pose_world: t=[1.5 0.6 0. ] q=[ 0.39192 -0.75369  0.       0.52758]
+      type: revolute
+      urdf_type: revolute
+      parent: cable0
+      child: virt_Ypf0
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X1
+      pose: t=[0. 0. 0.] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[-3.5 -2.   3.5] q=[ 0.54647 -0.64893  0.       0.52939]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X1
+      axis: Axis(xyz=['0.105169' '-0.753542' '-0.648933'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y1
+      pose: t=[0. 0. 0.] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[-3.5 -2.   3.5] q=[ 0.54647 -0.64893  0.       0.52939]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X1
+      child: virt_Y1
+      axis: Axis(xyz=['-0.753542' '0.365438' '-0.546470'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable1
+      pose: t=[ 0.       0.      -0.77852] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[-3.40528 -1.92024  3.42273] q=[ 0.54647 -0.64893  0.       0.52939]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y1
+      child: cable1
+      axis: Axis(xyz=['-0.648933' '-0.546470' '0.529393'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf1
+      pose: t=[0. 0. 0.] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[0.3 1.2 0.4] q=[ 0.54647 -0.64893  0.       0.52939]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf1
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf1
+      pose: t=[0. 0. 0.] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[0.3 1.2 0.4] q=[ 0.54647 -0.64893  0.       0.52939]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf1
+      child: virt_Ypf1
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf1
+      pose: t=[0. 0. 0.] q=[-0.56327  0.66889  0.       0.48508]
+      pose_world: t=[0.3 1.2 0.4] q=[ 0.54647 -0.64893  0.       0.52939]
+      type: revolute
+      urdf_type: revolute
+      parent: cable1
+      child: virt_Ypf1
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X2
+      pose: t=[0. 0. 0.] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[ 3.5 -2.   3.5] q=[0.50402 0.62033 0.      0.60095]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X2
+      axis: Axis(xyz=['0.035662' '0.783524' '0.620337'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y2
+      pose: t=[0. 0. 0.] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[ 3.5 -2.   3.5] q=[0.50402 0.62033 0.      0.60095]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X2
+      child: virt_Y2
+      axis: Axis(xyz=['0.783524' '0.363386' '-0.504024'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable2
+      pose: t=[ 0.       0.      -0.21719] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[ 3.49379 -1.99495  3.49398] q=[0.50402 0.62033 0.      0.60095]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y2
+      child: cable2
+      axis: Axis(xyz=['0.620337' '-0.504024' '0.600951'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf2
+      pose: t=[0. 0. 0.] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[0.3 0.6 0.4] q=[0.50402 0.62033 0.      0.60095]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf2
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf2
+      pose: t=[0. 0. 0.] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[0.3 0.6 0.4] q=[0.50402 0.62033 0.      0.60095]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf2
+      child: virt_Ypf2
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf2
+      pose: t=[0. 0. 0.] q=[ 0.56418  0.69438  0.      -0.44668]
+      pose_world: t=[0.3 0.6 0.4] q=[0.50402 0.62033 0.      0.60095]
+      type: revolute
+      urdf_type: revolute
+      parent: cable2
+      child: virt_Ypf2
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X3
+      pose: t=[0. 0. 0.] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[ 3.5 -2.   3.5] q=[0.62173 0.38858 0.      0.68002]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X3
+      axis: Axis(xyz=['0.528082' '0.755069' '0.388588'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y3
+      pose: t=[0. 0. 0.] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[ 3.5 -2.   3.5] q=[0.62173 0.38858 0.      0.68002]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X3
+      child: virt_Y3
+      axis: Axis(xyz=['0.755069' '-0.208110' '-0.621740'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable3
+      pose: t=[ 0.       0.      -0.20652] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[ 3.49649 -1.99438  3.49386] q=[0.62173 0.38858 0.      0.68002]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y3
+      child: cable3
+      axis: Axis(xyz=['0.388588' '-0.621740' '0.680028'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf3
+      pose: t=[0. 0. 0.] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[1.5 1.2 0. ] q=[0.62173 0.38858 0.      0.68002]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf3
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf3
+      pose: t=[0. 0. 0.] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[1.5 1.2 0. ] q=[0.62173 0.38858 0.      0.68002]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf3
+      child: virt_Ypf3
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf3
+      pose: t=[0. 0. 0.] q=[ 0.77721  0.48575  0.      -0.39998]
+      pose_world: t=[1.5 1.2 0. ] q=[0.62173 0.38858 0.      0.68002]
+      type: revolute
+      urdf_type: revolute
+      parent: cable3
+      child: virt_Ypf3
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X4
+      pose: t=[0. 0. 0.] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[-3.5  2.   3.5] q=[-0.26155 -0.70993  0.       0.65389]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X4
+      axis: Axis(xyz=['-0.456231' '0.536506' '-0.709939'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y4
+      pose: t=[0. 0. 0.] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[-3.5  2.   3.5] q=[-0.26155 -0.70993  0.       0.65389]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X4
+      child: virt_Y4
+      axis: Axis(xyz=['0.536506' '0.802340' '0.261557'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable4
+      pose: t=[ 0.       0.      -0.38812] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[-3.47646  1.99132  3.47831] q=[-0.26155 -0.70993  0.       0.65389]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y4
+      child: cable4
+      axis: Axis(xyz=['-0.709939' '0.261557' '0.653892'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf4
+      pose: t=[0. 0. 0.] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[0.3 0.6 0. ] q=[-0.26155 -0.70993  0.       0.65389]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf4
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf4
+      pose: t=[0. 0. 0.] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[0.3 0.6 0. ] q=[-0.26155 -0.70993  0.       0.65389]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf4
+      child: virt_Ypf4
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf4
+      pose: t=[0. 0. 0.] q=[0.31437 0.85329 0.      0.41599]
+      pose_world: t=[0.3 0.6 0. ] q=[-0.26155 -0.70993  0.       0.65389]
+      type: revolute
+      urdf_type: revolute
+      parent: cable4
+      child: virt_Ypf4
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X5
+      pose: t=[0. 0. 0.] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[-3.5  2.   3.5] q=[-0.13474 -0.84215  0.       0.52213]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X5
+      axis: Axis(xyz=['-0.484140' '0.237462' '-0.842152'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y5
+      pose: t=[0. 0. 0.] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[-3.5  2.   3.5] q=[-0.13474 -0.84215  0.       0.52213]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X5
+      child: virt_Y5
+      axis: Axis(xyz=['0.237462' '0.962006' '0.134744'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable5
+      pose: t=[ 0.       0.      -0.83546] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[-3.35648  1.97703  3.41101] q=[-0.13474 -0.84215  0.       0.52213]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y5
+      child: cable5
+      axis: Axis(xyz=['-0.842152' '0.134744' '0.522134'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf5
+      pose: t=[0. 0. 0.] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[1.5 1.2 0.4] q=[-0.13474 -0.84215  0.       0.52213]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf5
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf5
+      pose: t=[0. 0. 0.] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[1.5 1.2 0.4] q=[-0.13474 -0.84215  0.       0.52213]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf5
+      child: virt_Ypf5
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf5
+      pose: t=[0. 0. 0.] q=[0.13782 0.86143 0.      0.4888 ]
+      pose_world: t=[1.5 1.2 0.4] q=[-0.13474 -0.84215  0.       0.52213]
+      type: revolute
+      urdf_type: revolute
+      parent: cable5
+      child: virt_Ypf5
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X6
+      pose: t=[0. 0. 0.] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[3.5 2.  3.5] q=[-0.3548   0.50685  0.       0.78562]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X6
+      axis: Axis(xyz=['-0.198409' '-0.838886' '0.506857'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y6
+      pose: t=[0. 0. 0.] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[3.5 2.  3.5] q=[-0.3548   0.50685  0.       0.78562]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X6
+      child: virt_Y6
+      axis: Axis(xyz=['-0.838886' '0.412780' '0.354800'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable6
+      pose: t=[0.      0.      1.23148] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[3.37527 1.91268 3.30667] q=[-0.3548   0.50685  0.       0.78562]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y6
+      child: cable6
+      axis: Axis(xyz=['0.506857' '0.354800' '0.785629'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf6
+      pose: t=[0. 0. 0.] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[1.5 0.6 0.4] q=[-0.3548   0.50685  0.       0.78562]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf6
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf6
+      pose: t=[0. 0. 0.] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[1.5 0.6 0.4] q=[-0.3548   0.50685  0.       0.78562]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf6
+      child: virt_Ypf6
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf6
+      pose: t=[0. 0. 0.] q=[-0.54185  0.77408  0.      -0.32739]
+      pose_world: t=[1.5 0.6 0.4] q=[-0.3548   0.50685  0.       0.78562]
+      type: revolute
+      urdf_type: revolute
+      parent: cable6
+      child: virt_Ypf6
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_X7
+      pose: t=[0. 0. 0.] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[3.5 2.  3.5] q=[-0.16634  0.66536  0.       0.72774]
+      type: revolute
+      urdf_type: revolute
+      parent: frame
+      child: virt_X7
+      axis: Axis(xyz=['-0.626115' '-0.406529' '0.665368'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Y7
+      pose: t=[0. 0. 0.] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[3.5 2.  3.5] q=[-0.16634  0.66536  0.       0.72774]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_X7
+      child: virt_Y7
+      axis: Axis(xyz=['-0.406529' '0.898368' '0.166342'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: cable7
+      pose: t=[0.      0.      0.12501] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[3.49794 1.99948 3.49775] q=[-0.16634  0.66536  0.       0.72774]
+      type: prismatic
+      urdf_type: prismatic
+      parent: virt_Y7
+      child: cable7
+      axis: Axis(xyz=['0.665368' '0.166342' '0.727747'], lower_limit=-4.93128786424, upper_limit=4.93128786424, effort=10000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Xpf7
+      pose: t=[0. 0. 0.] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[0.3 1.2 0. ] q=[-0.16634  0.66536  0.       0.72774]
+      type: revolute
+      urdf_type: revolute
+      parent: platform
+      child: virt_Xpf7
+      axis: Axis(xyz=['1' '0' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Ypf7
+      pose: t=[0. 0. 0.] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[0.3 1.2 0. ] q=[-0.16634  0.66536  0.       0.72774]
+      type: revolute
+      urdf_type: revolute
+      parent: virt_Xpf7
+      child: virt_Ypf7
+      axis: Axis(xyz=['0' '1' '0'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+    Joint(
+      name: rev_Zpf7
+      pose: t=[0. 0. 0.] q=[-0.22542  0.90169  0.      -0.36895]
+      pose_world: t=[0.3 1.2 0. ] q=[-0.16634  0.66536  0.       0.72774]
+      type: revolute
+      urdf_type: revolute
+      parent: cable7
+      child: virt_Ypf7
+      axis: Axis(xyz=['0' '0' '1'], lower_limit=0.0, upper_limit=0.0, effort=1000.0, velocity=10.0)
+    )
+)

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="paused" default="true"/>
+    <arg name="model" default="upcaroca"/>
+    <arg name="model_tra" default="trajectory"/>
+    
+    <!-- Launch Gazebo with empty world-->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="gui" value="true"/>
+        <arg name="paused" value="$(arg paused)"/>
+    </include >
+
+     <arg name="arm_id"      default="panda" doc="Name of the robot to spawn" />
+    <arg name="initial_joint_positions"
+       doc="Initial joint configuration of the panda. Specify as a list of name/value pairs in form of '-J [name-of-joint] [value-in-rad]'. Default is a 90 degree bend in the elbow"
+       default="-J $(arg arm_id)_joint1 0.0
+                -J $(arg arm_id)_joint2 -0.785398163
+                -J $(arg arm_id)_joint3 0.0
+                -J $(arg arm_id)_joint4 -2.35619449
+                -J $(arg arm_id)_joint5 0.0
+                -J $(arg arm_id)_joint6 1.57079632679
+                -J $(arg arm_id)_joint7 0.785398163397"
+       />
+
+    <!-- spawn robot -->
+    <node name="robot_sp" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-sdf -model $(arg model) -file $(find cdpr)/sdf/$(arg model).sdf $(arg initial_joint_positions) "/>
+    <!-- <node name="robot_sp" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-sdf -model $(arg model) -file $(find cdpr)/sdf/$(arg model).sdf  "/> -->
+    
+    
+
+    <!-- load model description -->
+    <rosparam file="$(find cdpr)/sdf/$(arg model).yaml" command="load" ns="model"/>
+    <rosparam file="$(find cdpr)/sdf/$(arg model_tra).yaml" command="load" ns="Tra"/>
+
+    <arg name="debug" default="false" />
+    <arg unless="$(arg debug)" name="launch_prefix" value=""/>
+    <arg if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args"/>
+
+    <node pkg="cdpr_controllers" launch-prefix="$(arg launch_prefix)" type="cdpr_controllers_action" name="cdpr_simulator" output="screen"> 
+    </node> 
+    
+    <!-- generate trajectory -->
+
+    <!-- <node pkg="trajectory_generator" type="straight_line" name="trajectory_generator" output="screen"> -->
+    <!-- <node pkg="trajectory_generator" type="platform_server" name="platform_server" output="screen">
+    </node> -->
+    <!-- <node pkg="trajectory_generator" type="jointposture_server" name="jointposture_server" output="screen">
+    </node> -->
+
+</launch>

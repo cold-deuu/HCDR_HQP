@@ -1,0 +1,9 @@
+# Define the goal
+sensor_msgs/JointState target_joints
+float32 duration
+---
+# Define the result
+bool is_completed
+---
+# Define a feedback message
+float32 percent_complete
