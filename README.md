@@ -15,3 +15,10 @@ command
 whole-body : wholebody
 franka : franka
 cdpr : cdpr
+
+
+## Dependency
+1. pinocchio
+2. gazebo
+3. ROS Noetic
+4. Eigen
