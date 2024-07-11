@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-    <arg name="paused" default="true"/>
+    <arg name="paused" default="false"/>
     <arg name="model" default="upcaroca"/>
     <arg name="model_tra" default="trajectory"/>
     
@@ -38,6 +38,11 @@
 
     <node pkg="cdpr_controllers" launch-prefix="$(arg launch_prefix)" type="cdpr_controllers_action" name="cdpr_simulator" output="screen"> 
     </node> 
+    
+
+    <param name="urdf_path" type="string" value="$(find cdpr)"/>
+    <param name="urdf_name" type="string" value="/sdf/uppanda.urdf"/>
+
     
     <!-- generate trajectory -->
 

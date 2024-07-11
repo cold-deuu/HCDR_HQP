@@ -220,9 +220,9 @@ namespace RobotController{
         // Q.topLeftCorner(6,6) *= 1;
         // Q.block<7,7>(6,6) *= 1e+5;
         // Q.bottomRightCorner(15,15) *= 1e-5;
-        Q.topLeftCorner(13,13) *= 1e-5;
-        Q.block<8,8>(13,13) *= 1;
-        Q.bottomRightCorner(7,7) *= 3000;
+        Q.topLeftCorner(13,13) *= 1e-10;
+        Q.block<8,8>(13,13) *= 0.001;
+        Q.bottomRightCorner(7,7) *= 1;
 
         // Q.topLeftCorner(6,6) *= 1;
         // Q.block<7,7>(6,6)*= 1e+3;
@@ -331,8 +331,8 @@ namespace RobotController{
         // variables
         Eigen::MatrixXd Q(28,28);
         Q.setIdentity();
-        Q.topLeftCorner(13,13) *= 1e-5;
-        Q.block<8,8>(13,13) *= 1;
+        Q.topLeftCorner(13,13) *= 1e-10;
+        Q.block<8,8>(13,13) *= 0.001;
         Q.bottomRightCorner(7,7) *= 1;
         Eigen::VectorXd C(28);
         C.setZero();
@@ -396,8 +396,8 @@ namespace RobotController{
         VectorXd m_platform_a_des = m_Kp_se3.cwiseProduct(platform_p_error.toVector()) - m_Kd_se3.cwiseProduct(m_state.platform_vel);
 
         //Get Wholebody Acc
-        m_pub.tension = m_state.W_inv * (m_data.M * ( m_platform_a_des - 5 * m_v.head(6)) + m_state.floating_G);
-        m_pub.arm_torque = m_state.franka_G + m_data.M * (franka_a_des);
+        m_pub.tension = m_state.W_inv * (m_state.floating_M * ( m_platform_a_des - 5 * m_v.head(6)) + m_state.floating_G);
+        m_pub.arm_torque = m_state.franka_G + m_state.franka_M * (franka_a_des);
     }
 
     void CDPRFrankaWrapper::joint_update(const Eigen::VectorXd& q, const Eigen::VectorXd& v, Eigen::VectorXd & l){        

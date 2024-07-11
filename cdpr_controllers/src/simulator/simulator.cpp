@@ -17,9 +17,15 @@ int main(int argc, char ** argv){
     // Robot Wrapper
     robot_ = std::make_shared<CDPR>(nh);        
 
-    std::string urdf_filename = "/home/chan/rci_cdpr_ws/src/cdpr/sdf/uppanda.urdf";
+    string model_path, urdf_name;
+    nh.getParam("/urdf_path", model_path);  
+    nh.getParam("/urdf_name",urdf_name);
+    vector<string> package_dirs;
+    package_dirs.push_back(model_path);
+    string urdfFileName = package_dirs[0] + urdf_name;
+
     pinocchio::Model model;
-    pinocchio::urdf::buildModel(urdf_filename, JointModelFreeFlyer(),model);
+    pinocchio::urdf::buildModel(urdfFileName, JointModelFreeFlyer(),model);
     pinocchio::Model::Index joint_id;
     pinocchio::Data data(model);
     
